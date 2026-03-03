@@ -70,7 +70,7 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "central~" + string_session;
+                        let md = "centralhex~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
                         let desc = `*Hey there, User!* 👋🏻
 
@@ -97,7 +97,7 @@ Stay cool and hack smart. ✌🏻`;
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴍᴀʟᴠɪɴ-xᴅ 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉",
+title: "central-hex 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉",
 thumbnailUrl: "https://files.catbox.moe/d58ulk.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029VbC8YkY7oQhiOiiSpy1z",
 mediaType: 1,
@@ -131,7 +131,7 @@ Stay cool and hack smart. ✌🏻*`;
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "ᴍᴀʟᴠɪɴ-xᴅ 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 ✅  ",
+title: "central-hex 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 ✅  ",
 thumbnailUrl: "https://files.catbox.moe/d58ulk.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029VbC8YkY7oQhiOiiSpy1z",
 mediaType: 2,
